@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatApp</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<button id="darkModeBtn">Toggle Dark Mode</button>
+<div class="container">
+  <div class="left-menu">
+    <ul id="userList">
+      <li class="selected" data-name="Dhwanit">
+        <img class="avatar-small" src="https://w0.peakpx.com/wallpaper/961/507/HD-wallpaper-sung-jin-woo-solo-leveling-thumbnail.jpg" alt="Dhwanit"> Dhwanit
+      </li>
+      <li data-name="John">
+        <img class="avatar-small" src="https://randomuser.me/api/portraits/men/32.jpg" alt="John"> John
+      </li>
+      <li data-name="Chloe">
+        <img class="avatar-small" src="https://randomuser.me/api/portraits/women/8.jpg" alt="Chloe"> Chloe
+      </li>
+    </ul>
+  </div>
+
+  <div class="chat-box">
+    <div class="header" id="chat-header">
+      <img class="avatar" id="active-avatar"
+        src="https://w0.peakpx.com/wallpaper/961/507/HD-wallpaper-sung-jin-woo-solo-leveling-thumbnail.jpg" alt="Profile">
+      <span class="user-name" id="active-user">Dhwanit</span>
+    </div>
+    <div class="chat-area" id="chat-area"></div>
+    <div class="input-field">
+      <input type="text" id="message-input" placeholder="Type a message...">
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
